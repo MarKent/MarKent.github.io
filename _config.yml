@@ -1,30 +1,43 @@
-highlighter: rouge
-markdown: kramdown
-title: My Resume
-url: 'https://markent.github.io/'
-baseurl: 'https://markent.github.io/' #change it according to your repository name
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
 
+# Site settings
+title: "Mark Kent"
+title-font-size: '4em' # a provision to adjust the size of your title. If it is too long then do resize to a smaller value. By default it will be 4em.
 
-# Enable one of these styles by removing #
-#style: styles-2
-#style: styles-3
-#style: styles-4
-#style: styles-5
-#style: styles-6
-
-
-
-
-#Profile information
-name: Mark Kent
-tagline: A Little Monkey
-pic: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
-
-#sidebar links
 email: mkgyn@icloud.com
-phone: 139 **** ****
-website: markent.github.io #do not add http://
-linkedin: alandoe
-github: alandoe
-twitter: '@twittername'
+description: I am a little monkey.
+baseurl: "/markent.github.io" # the subpath of your site, e.g. /blog
+url: "https://markent.github.io/" # the base hostname & protocol for your site
 
+permalink: :title/
+
+# Build settings
+markdown: kramdown
+highlight: rouge
+paginate: 5
+paginate_path: /page:num/
+
+
+# Tracker
+analytics: UA-83979019-1
+
+# Comments
+disqus-shortname: webjeda-demo
+
+# Contact form
+# Go to https://getsimpleform.com and get a API token by signing up with your email and enter that here
+api-token:   
+
+#CSS
+sass:
+  style: compressed
+
+
+include: [_pages]
+
+gems: [jekyll-paginate, jekyll-seo-tag]

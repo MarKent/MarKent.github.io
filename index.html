@@ -2,13 +2,21 @@
 layout: default
 ---
 
-            
-{% include carrier-profile.html %}
-            
-{% include experience.html %}
-            
-{% include projects.html %}
-            
-{% include skills.html %}
+<div class="home">
 
+  <h1 class="post-title">Articles</h1>
 
+  <ul class="post-list">
+    {% for post in paginator.posts %}
+      <li>
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <span class="post-meta"><small>{{ post.date | date: "%b %-d, %Y" }}</small></span>
+        </h2>
+         
+      </li>
+
+    {% endfor %}
+  </ul>
+
+{% include pagination.html %}
