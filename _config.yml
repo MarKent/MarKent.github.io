@@ -1,31 +1,49 @@
 # Site settings
-title: Liang Ke Jin
-description: Liang Ke Jin
-favicon: /assets/img/avatar.JPG
-baseurl:
-url: https://liungkejin.github.io
-rss_url:
+title: Mark Kent
+email: mkgyn@icloud.com
+description: > # this means to ignore newlines until "baseurl:"
+  A Liitle Monkey
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://MarKent.github.io/" # the base hostname & protocol for your site
+rss_url: /pages/feed.xml
+author: Mark Kent
+
+# Sidebar filter
+# Choose 'tag' or 'category' as filter in sidebar.
+filter: 'category'
+
+# Social account
+twitter: 
+weibo: 熊奥特之一是我
+github: MarKent
+instagram: 
+linkedin: 
+
+# avatar and Favicon
+avatar: http://7u2ho6.com1.z0.glb.clouddn.com/site-avatar.png
+favicon: http://7u2ho6.com1.z0.glb.clouddn.com/site-favicon.ico
+
+# disqus config
+disqus:
+  shortname: suyan-zh
+
+# google analytics config
+ga:
+  id: UA-87081135-1
+  url: MarKent.github.io
 
 # Build settings
-
-#highlight: true
-highlighter: rouge
-
-timezone: Asia/Shanghai
-
+permalink: /:year/:month/:day/:title.html
 markdown: kramdown
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
+highlighter: rouge
+mathjax: disabled
+sass:
+  style: compressed
 
-  coderay:
-    coderay_wrap: div
-    coderay_line_numbers: inline
-    coderay_line_numbers_start: 1
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: style
+# Jekyll Plugin
+# https://help.github.com/articles/adding-jekyll-plugins-to-a-github-pages-site/
+gems:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
+
