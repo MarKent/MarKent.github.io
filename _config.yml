@@ -10,7 +10,8 @@ author: Mark Kent
 
 # Sidebar filter
 # Choose 'tag' or 'category' as filter in sidebar.
-filter: 'tag'
+filter: 'category'
+active: iOS
 
 # Social account
 twitter: 
@@ -20,12 +21,12 @@ instagram:
 linkedin: 
 
 # avatar and Favicon
-avatar: http://7u2ho6.com1.z0.glb.clouddn.com/profile.png
-favicon: http://7u2ho6.com1.z0.glb.clouddn.com/favicon.ico 
+avatar: /assets/img/profile.png
+favicon: /assets/img/favicon.ico 
 
 # disqus config
-disqus:
-  shortname: suyan-zh
+#disqus:
+  #shortname: suyan-zh
 
 # google analytics config
 ga:
