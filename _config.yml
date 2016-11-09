@@ -20,8 +20,8 @@ instagram:
 linkedin: 
 
 # avatar and Favicon
-avatar: 
-favicon: 
+avatar: profile.png
+favicon: favicon.ico 
 
 # disqus config
 disqus:
