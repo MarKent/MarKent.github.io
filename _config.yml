@@ -15,22 +15,28 @@
 # in the templates via {{ site.myvariable }}.
 highlighter: rouge
 markdown: kramdown
-title: Your awesome title
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+title: Mark Kent
+description: 我不知道还能坚持多级 但我别无选择
+author: Mark Kent
+logo: /hcz-jekyll-blog/static/img/avatar.png
+github: https://github.com/MarKent
+about: A Little Monkey
 
-# Build settings
-markdown: kramdown
-theme: minima
-gems:
-  - jekyll-feed
-exclude:
-  - Gemfile
-  - Gemfile.lock
+baseurl: ""
+url: ""
+
+disqus_shortname: aboutashu
+google_analytics: UA-72862926-1
+
+share:
+  twitter_username: \#
+  fb_appid: 000000000000
+
+
+enableTags: true
+tagarray: []
+
+paginate: 20
+per_page: 20
+paginate_path: "/page:num/"
+gems: [jekyll-paginate, jekyll-gist]
