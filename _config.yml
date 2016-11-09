@@ -1,58 +1,30 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-title-bold: Mark Kent
-title-normal: A Little Monkey
-email: mkgyn@icloud.com
-description: Fuck
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://MarKent.gitlab.io" # the base hostname & protocol for your site
-author: Mark Kent
-street_address: Mark 
-city: Blandis
-state: TN
-zip_code: 55555
-country: MK
-phone: 139********
-
-# Plugins
-gems:
-  - jekyll-sitemap
-  - jekyll-seo-tag
-  - jekyll-feed
-  - jemoji
-
-# Homepage tiles
-tiles-source: posts # accepts "posts" or "pages" 
-tiles-count: 6
-
-# Social settings
-500px_url: 
-facebook_url: 
-github_url: 
-gitlab_url: https://gitlab.com/u/andrewbanchich
-googleplus_url: https://plus.google.com/u/0/+AndrewBanchich
-instagram_url: https://instagram.com
-linkedin_url: https://www.linkedin.com/in/andrew-banchich-a4ba1195
-pinterest_url: 
-slack_url: 
-twitter_url: https://twitter.com/andrewbanchich
-
-# Build settings
-markdown: kramdown
 highlighter: rouge
-# Plugin: jekyll-seo-tag
-twitter:
-  username: andrewbanchich
-# Add one or more of the following
-facebook:
-  app_id: 
-  publisher: 
-  admins: 
-logo:
-google_site_verification: 
+markdown: kramdown
+title: 我的小窝
+url: 'https://markent.github.io/'
+baseurl: 'https://markent.github.io/' #change it according to your repository name
+
+
+# Enable one of these styles by removing #
+#style: styles-2
+#style: styles-3
+#style: styles-4
+#style: styles-5
+#style: styles-6
+
+
+
+
+#Profile information
+name: Mark Kent
+tagline: A Little Monkey
+pic: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+
+#sidebar links
+email: mkgyn@icloud.com
+phone: 139 **** ****
+website: markent.github.io #do not add http://
+linkedin: 
+github: MarKent 
+twitter: 
+
