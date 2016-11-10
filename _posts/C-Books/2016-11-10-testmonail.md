@@ -9,7 +9,8 @@ keywords: 书单,iOS
 ## 入门
 
 - 《精通Object-C》图灵丛书
-- 《Object-C高级编程：iOS与OS X多线程和内存管理》（日）Kazuki Sakamoto、Tomohiko Furumoto 著
+- 《Object-C高级编程：iOS与OS X多线程和内存管理》
+  （日）Kazuki Sakamoto、Tomohiko Furumoto 著
 
 - 《iOS开发指南：从零基础到APP Store上架》（最新版）图灵丛书
 
