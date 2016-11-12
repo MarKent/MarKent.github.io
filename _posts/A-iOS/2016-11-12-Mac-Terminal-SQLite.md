@@ -74,9 +74,9 @@ keywords: SQLite,iOS
     备份到指定路径（以备份到桌面为例)
     xxxx@aaa:test $: sqlite3 数据库名.db(or sqlite) .dump > /Users/aaa/desktop/backup.sql
 ```
+---
 
 ### 导入数据库
-
 #### sqlite3环境内
    
 * 只有sql文件的情况下，如**`databaseBackup.sql`**
