@@ -5,9 +5,9 @@ category: iOS
 tags: SQLite
 keywords: SQLite,iOS
 ---
-
 ### 备份(输出)数据 
-#### sqilite3环境下：
+
+#### sqilite3环境下
 
 - 用到的指令：
 
@@ -77,6 +77,7 @@ keywords: SQLite,iOS
 ---
 
 ### 导入数据库
+
 #### sqlite3环境内
    
 * 只有sql文件的情况下，如**`databaseBackup.sql`**
@@ -109,12 +110,9 @@ keywords: SQLite,iOS
 ```
 后两者必须要.open database.db才能实时更新操作数据库，顺序最好不要乱
 
-
-
 - 向指定表导入cvs或html格式的数据
     
-    `sqlite> .import xxx.cvs(xxx.html) 目标表名字`
-    
+    `sqlite> .import xxx.cvs(xxx.html) 目标表名字`  
 
 #### sqlite3环境外
 
