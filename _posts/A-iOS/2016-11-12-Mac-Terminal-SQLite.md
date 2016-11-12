@@ -15,7 +15,7 @@ keywords: SQLite,iOS
     sqlite> .output name.sql                 #导出SQL文件（不存在则创建）
     sqlite> .dump                            #不指定即导出整个数据库 
     sqlite> .output stdout                   #重新定向到当前数据库操作
-    sqlite> .backup  '路径/自定义数据库名.db'  #直接备份已有的数据库到指定位置（可自定义备份的数据库名如custom.db）
+    sqlite> .backup  '路径/自定义数据库名.db'   #直接备份已有的数据库到指定位置（可自定义备份的数据库名如custom.db）
 ```
     
 - 在当前路径下备份数据库内所有数据
@@ -26,7 +26,7 @@ keywords: SQLite,iOS
     sqlite> .output stdout
 ```     
 
-* 在当路径下备份指定的数据表
+* 在当前路径下备份指定的数据表
     * 比如数据库里有一份名为Students的数据表
     
 ```
@@ -47,7 +47,7 @@ keywords: SQLite,iOS
     * 如导出名为Students的数据表
         
 ```
-    sqlite> .output students.csv(或者.html)`
+    sqlite> .output students.csv(或者.html)
     sqlite> .mode col/.headers on              #可以设置导出的样式
     sqlite> select * from Students;     
     sqlite> .output stdout
@@ -75,7 +75,6 @@ keywords: SQLite,iOS
     xxxx@aaa:test $: sqlite3 数据库名.db(or sqlite) .dump > /Users/aaa/desktop/backup.sql
 ```
 ---
-
 ### 导入数据库
 
 #### sqlite3环境内
