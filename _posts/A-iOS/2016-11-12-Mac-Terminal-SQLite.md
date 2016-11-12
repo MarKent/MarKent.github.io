@@ -75,6 +75,7 @@ keywords: SQLite,iOS
     xxxx@aaa:test $: sqlite3 数据库名.db(or sqlite) .dump > /Users/aaa/desktop/backup.sql
 ```
 
+
 ### 导入数据库
 
 #### sqlite3环境内
