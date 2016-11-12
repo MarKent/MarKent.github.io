@@ -1,15 +1,12 @@
 ---
 layout: post
-title: Mac终端下的SQLite数据库操作
+title: 基于Mac终端SQLite3环境下的SQLite数据库操作
 category: iOS
 tags: SQLite
 keywords: SQLite,iOS
 ---
 
-## 基于Mac终端SQLite3环境下的SQLite数据库操作
-
 ### 备份(输出)数据 
----
 #### sqilite3环境下：
 
 - 用到的指令：
@@ -28,7 +25,6 @@ keywords: SQLite,iOS
     sqlite> .dump    
     sqlite> .output stdout
 ```     
-
 
 * 在当路径下备份指定的数据表
     * 比如数据库里有一份名为Students的数据表
@@ -79,8 +75,8 @@ keywords: SQLite,iOS
     xxxx@aaa:test $: sqlite3 数据库名.db(or sqlite) .dump > /Users/aaa/desktop/backup.sql
 ```
 ---
-### 导入数据库
 
+### 导入数据库
 #### sqlite3环境内
    
 * 只有sql文件的情况下，如**`databaseBackup.sql`**
