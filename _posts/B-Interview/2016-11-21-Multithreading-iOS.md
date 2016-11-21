@@ -26,4 +26,3 @@ description: 关于iOS多线程技能点的面试
 #### iOS中的多线程技术
  
  ![](/assets/img/iosmultythreading.png)
- ![](https://mega.nz/#!oxVgQD4C!SNLbP0FeuK_PSsdTarhuZ5tQH_lfBmaQ9h7vYRHJDaY)
