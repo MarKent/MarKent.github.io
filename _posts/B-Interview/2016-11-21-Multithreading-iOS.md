@@ -25,4 +25,66 @@ description: 关于iOS多线程技能点的面试
 
 #### iOS中的多线程技术
  
- ![](/assets/img/iosmultythreading.png)
+ ![](http://oh08pyi2u.bkt.clouddn.com/iosmultythreading.png)
+ ![](http://oh08pyi2u.bkt.clouddn.com/threads.png)
+
+### GCD中队列和多线程的使用原理
+
+`队列`: Dispatch Queue,是GCD的一个重要概念,他是一个用来存放任务的集合,负责管理开发者提交的任务.其核心理念就是将长期运行的任务拆分成多个工作单元,并将这些单元添加到队列中,系统会代为管理这些队列,并放到多线程上执行,无需开发者直接启动和管理后台程序.
+
+- GCD中分为以下几种队列
+    
+    - 串行队列: 队列中的任务按FIFO(先进先出)规则有顺序的执行
+       
+    ```
+    diaspatch_queue_t q = dispatch_queue_create("queue-name",DISPATCH_QUEUE_SERIAL);
+    ```
+
+    - 并行队列: 队列中的任务并发执行
+       
+    ```
+    diaspatch_queue_t q = dispatch_queue_create("queue-name",DISPATCH_QUEUE_CONCURRENT);
+    ```
+
+    - 全局队列: 系统的队列,GET获取,类似于并行队列
+       
+    ```
+    diaspatch_queue_t q = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT,0);
+    ```
+
+    - 主队列: 每个应用程序对应一个主队列,GET获取,类似串行队列,用来更新UI
+       
+    ```
+    diaspatch_queue_t q = dispatch_get_main_queue();
+    ```
+
+`任务`: 就是用户提交给队列的工作单元,也就是代码块,这些任务会交给队列维护和使用的线程池执行,因此这些任务会以多线程的方式执行.
+
+`提交任务到队列`: 
+
+```
+dispatch_sync(queue_name,^{'代码块'});//同步提交,不开启新线程
+dispatch_async(queue_name,^{'代码块'});//异步提交,开启新线程
+```
+
+- 通过不同的任务提交方式(同步或异步),针对不同的队列,也会有不同的执行结果
+    - 同步串行队列: 不开启新线程,在当前线程,串行执行任务
+    - 同步并行队列: 不开启新线程,在当前线程,并发执行任务
+    - 异步串行队列: 开启一个新的线程,在这个线程里,串行执行任务
+    - 异步并行队列: 开启一个新的线程,在这个线程里,并发执行任务
+
+### 使用`atomic`一定是线程安全的吗?
+
+不是,atomic的本意是指属性的存取方法时线程安全的,即同步存取,但并不保证整个对象是线程安全的.比如,声明一个NSMutableArray的原子属性stuff,此时调用该属性的set和get方法是线程安全的,但是使用[self.stuff objectAtIndex:index];就不是线程安全的,需要用锁保证线程安全性.
+
+### OC中创建线程的方法是什么?如果在主线程中执行代码方法是什么?如果想延时执行代码,方法是什么?
+
+### 有a,b,c,d四个异步请求,如何判断abcd都完成执行?如果需要abcd顺序执行该如何实现?
+
+### GCD的队列分哪两种类型?
+
+### 如何用GCD同步若干个异步调用?
+
+### `dispatch_barrier_async`的作用是什么
+
+### 苹果为什么要废弃`dispatch_get_current_queue`?
