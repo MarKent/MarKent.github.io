@@ -25,6 +25,7 @@ description: 关于iOS多线程技能点的面试
 
 #### iOS中的多线程技术
  
+<<<<<<< HEAD
  ![](http://oh08pyi2u.bkt.clouddn.com/iosmultythreading.png)
  ![](http://oh08pyi2u.bkt.clouddn.com/threads.png)
 
@@ -88,3 +89,6 @@ dispatch_async(queue_name,^{'代码块'});//异步提交,开启新线程
 ### `dispatch_barrier_async`的作用是什么
 
 ### 苹果为什么要废弃`dispatch_get_current_queue`?
+=======
+ ![表格](http://oh08pyi2u.bkt.clouddn.com/iosmultythreading.png)
+>>>>>>> dcb014016447193c053945181f1d9c77dd1e13c3
