@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 第一个Python程序
-category: B-Python
+category: Python
 tag: Python
 ---
 
